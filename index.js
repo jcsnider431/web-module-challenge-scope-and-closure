@@ -88,8 +88,8 @@ function finalScore(cb, num){
 
   for(let i = 0; i < num; i++){
     
-    homeScore = homeScore + inning()
-    awayScore = homeScore + inning()
+    homeScore += inning()
+    awayScore += inning()
     
   }
   
@@ -158,11 +158,10 @@ Use the scoreboard function below to do the following:
 
 
  function scoreboard(getInningScoreCB, inningCB, num) {
-    let score = [];
-    let home = 0;
-    let away = 0;
+      let score = [];
+      let home = 0;
+      let away = 0;
    for (let i = 0; i < num; i++){
-     
       home += getInningScore(inningCB).Home;
       away += getInningScore(inningCB).Away;
       score.push(`Inning ${i + 1}: Away ${away} - Home ${home}`);
