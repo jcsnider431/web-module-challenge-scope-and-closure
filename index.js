@@ -175,7 +175,7 @@ Use the scoreboard function below to do the following:
      
    return score;
  }
- console.log(scoreboard(getInningScore, inning , 7));
+ console.log(scoreboard(getInningScore, inning , 9));
 
 
 
